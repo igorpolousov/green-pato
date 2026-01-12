@@ -6,12 +6,14 @@ export default function GreenPatoLogo() {
     <div
       className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
     >
-      <Image 
-      src='/greenPato-logo'
-      width={50}
-      height={50}
-      alt="green pato logo"
-      />
+      <Image
+            loading="eager"
+            src="/greenPato-logo.webp"
+            width={40}
+            height={40}
+            className="hidden md:block"
+            alt="Green Pato logo"
+          />
       <p className="text-[44px]">Green Pato</p>
     </div>
   );
