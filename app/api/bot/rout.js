@@ -4,6 +4,7 @@ const { bot, secretPath } = require('@/lib/telegram-bot')
 export async function POST(req) {
     try {
         const body = await req.json()
+        console.log(body)
         await bot.handleUpdate(body)
         return NextResponse.json({ ok: true })
     } catch (error) {
